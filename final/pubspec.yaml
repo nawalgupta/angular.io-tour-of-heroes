@@ -13,3 +13,9 @@ transformers:
     platform_pipes:
      - package:angular2/common.dart#COMMON_PIPES
     entry_points: web/main.dart
+
+dev_dependencies:
+  grinder: '^0.8.0+1'
+  peanut: '^0.0.1+2'
+  git: '^0.4.4+2'
+  path: '^1.3.9'

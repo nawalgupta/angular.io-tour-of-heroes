@@ -27,4 +27,3 @@ class HeroDetailComponent implements OnInit {
     window.history.back();
   }
 }
-

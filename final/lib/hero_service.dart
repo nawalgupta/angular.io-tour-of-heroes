@@ -13,9 +13,8 @@ class HeroService {
     return new Future.delayed(const Duration(seconds: 2), () => mockHeroes);
   }
 
-	Future<Hero> getHero(int id) async {
+  Future<Hero> getHero(int id) async {
     List<Hero> heroes = await getHeroes();
     return heroes.firstWhere((h) => h.id == id);
-	}
+  }
 }
-

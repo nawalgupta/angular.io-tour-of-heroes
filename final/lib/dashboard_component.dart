@@ -28,4 +28,3 @@ class DashboardComponent implements OnInit {
     ]);
   }
 }
-

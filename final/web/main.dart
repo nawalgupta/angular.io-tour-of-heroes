@@ -5,8 +5,5 @@ import 'package:angular2_tour_of_heroes/hero_service.dart';
 import 'package:angular2_tour_of_heroes/app_component.dart';
 
 main() {
-  bootstrap(AppComponent, [
-    ROUTER_PROVIDERS,
-    HeroService
-  ]);
+  bootstrap(AppComponent, [ROUTER_PROVIDERS, HeroService]);
 }
