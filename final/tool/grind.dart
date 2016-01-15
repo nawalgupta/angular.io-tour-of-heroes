@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:path/path.dart' as path;
 import 'dart:async';
 
+import 'package:kp_directory/kp_directory.dart';
+
 void main(List<String> args) {
   grind(args);
 }
@@ -22,6 +24,10 @@ peanut() async {
 
   final exitCode = await process.exitCode;
   if (exitCode != 0) throw 'Error running pub ${args.join(' ')}';
+
+  copySync(getDirectory(tempDir, 'web'), getDirectory(tempDir,'final'));
+
+  getDirectory(tempDir, 'web').deleteSync(recursive: true);
 
   final gitDir = await GitDir.fromExisting('../');
 

@@ -89,6 +89,10 @@ packages:
     description: intl
     source: hosted
     version: "0.12.6"
+  kp_directory:
+    description: kp_directory
+    source: hosted
+    version: "0.0.1"
   logging:
     description: logging
     source: hosted
