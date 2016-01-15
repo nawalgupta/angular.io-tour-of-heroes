@@ -26,7 +26,7 @@ peanut() async {
   final gitDir = await GitDir.fromExisting('../');
 
   final commit = await gitDir.updateBranchWithDirectoryContents(
-      'gh-pages', path.join(tempDir.path, 'web'), '.');
+      'gh-pages', path.join(tempDir.path), 'update final');
 
   if (commit == null) {
     print('There was no change in branch. No commit created.');
