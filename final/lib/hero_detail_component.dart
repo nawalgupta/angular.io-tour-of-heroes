@@ -19,7 +19,7 @@ class HeroDetailComponent implements OnInit {
   HeroDetailComponent(this._heroService, this._routeParams);
 
   ngOnInit() async {
-    int id = _routeParams.params['id'] as int;
+    int id = int.parse(_routeParams.params['id']);
     hero ??= await _heroService.getHero(id);
   }
 

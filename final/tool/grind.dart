@@ -25,7 +25,7 @@ peanut() async {
   final exitCode = await process.exitCode;
   if (exitCode != 0) throw 'Error running pub ${args.join(' ')}';
 
-  copySync(getDirectory(tempDir, 'web'), getDirectory(tempDir,'final'));
+  copySync(getDirectory(tempDir, 'web'), getDirectory(tempDir, 'final'));
 
   getDirectory(tempDir, 'web').deleteSync(recursive: true);
 

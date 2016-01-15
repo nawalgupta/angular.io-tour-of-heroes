@@ -26,7 +26,7 @@ class HeroesComponent implements OnInit {
   gotoDetail() {
     _router.navigate([
       'HeroDetail',
-      {'id': selectedHero.id}
+      {'id': selectedHero.id.toString()}
     ]);
   }
 

@@ -15,7 +15,7 @@ class DashboardComponent implements OnInit {
   final Router _router;
   DashboardComponent(this._heroService, this._router);
 
-  ngOnInit() async {
+  ngOnInit() {
     _heroService
         .getHeroes()
         .then((heroes) => this.heroes = heroes.sublist(1, 5));
@@ -24,7 +24,7 @@ class DashboardComponent implements OnInit {
   gotoDetail(Hero hero) {
     _router.navigate([
       'HeroDetail',
-      {'id': hero.id}
+      {'id': hero.id.toString()}
     ]);
   }
 }
