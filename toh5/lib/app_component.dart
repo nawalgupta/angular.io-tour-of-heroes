@@ -4,7 +4,6 @@ import 'package:angular2/router.dart';
 import 'heroes_component.dart';
 import 'hero_detail_component.dart';
 import 'dashboard_component.dart';
-import 'hero_service.dart';
 
 @Component(
     selector: 'my-app',

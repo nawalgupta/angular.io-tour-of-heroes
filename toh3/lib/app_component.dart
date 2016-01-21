@@ -1,8 +1,5 @@
 import 'package:angular2/angular2.dart';
-// #docregion hero-import
 import 'hero.dart';
-// #enddocregion hero-import
-// #docregion hero-detail-import
 import 'hero_detail_component.dart';
 
 @Component(

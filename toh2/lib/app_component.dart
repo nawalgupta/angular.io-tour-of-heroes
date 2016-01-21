@@ -28,7 +28,6 @@ class Hero {
         </div>
       </div>
     ''',
-// #docregion styles-1
     styles: const [
       '''
       .selected {
