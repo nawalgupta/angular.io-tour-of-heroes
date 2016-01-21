@@ -9,14 +9,12 @@ import 'hero_service.dart';
 @Component(
     selector: 'my-app',
     template: '''
-    <h1>{{title}}</h1>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
-    <a [routerLink]="['Heroes']">Heroes</a>
-    <router-outlet></router-outlet>
+      <h1>{{title}}</h1>
+      <a [routerLink]="['Dashboard']">Dashboard</a>
+      <a [routerLink]="['Heroes']">Heroes</a>
+      <router-outlet></router-outlet>
     ''',
-    styleUrls: const ['app_component.css'],
-    directives: const [ROUTER_DIRECTIVES],
-    providers: const [HeroService])
+    styleUrls: const ['app_component.css'])
 @RouteConfig(const [
   const Route(
       path: '/dashboard',

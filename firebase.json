@@ -1,0 +1,31 @@
+{
+  "firebase": "tour-of-heroes",
+  "public": "build",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ],
+  "rewrites": [
+    {
+      "source": "/toh1/**",
+      "destination": "/toh1/index.html"
+    },
+    {
+      "source": "/toh2/**",
+      "destination": "/toh2/index.html"
+    },
+    {
+      "source": "/toh3/**",
+      "destination": "/toh3/index.html"
+    },
+    {
+      "source": "/toh4/**",
+      "destination": "/toh4/index.html"
+    },
+    {
+      "source": "/toh5/**",
+      "destination": "/toh5/index.html"
+    }
+  ]
+}
