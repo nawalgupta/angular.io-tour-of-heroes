@@ -1,15 +1,10 @@
-// #docplaster
-// #docregion
 import 'dart:async';
 
 import 'package:angular2/core.dart';
 
 import 'hero.dart';
 import 'hero_detail_component.dart';
-// #docregion hero-service-import
 import 'hero_service.dart';
-
-// #enddocregion hero-service-import
 
 @Component(
     selector: 'my-app',
@@ -90,11 +85,9 @@ class AppComponent implements OnInit {
 
   AppComponent(this._heroService);
 
-// #docregion get-heroes
   getHeroes() async {
     heroes = await _heroService.getHeroes();
   }
-// #enddocregion get-heroes
 
   ngOnInit() {
     getHeroes();

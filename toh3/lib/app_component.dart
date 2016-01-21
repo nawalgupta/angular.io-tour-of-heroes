@@ -1,15 +1,12 @@
-//#docregion
 import 'package:angular2/angular2.dart';
 // #docregion hero-import
 import 'hero.dart';
 // #enddocregion hero-import
 // #docregion hero-detail-import
 import 'hero_detail_component.dart';
-// #enddocregion hero-detail-import
 
 @Component(
     selector: 'my-app',
-// #docregion hero-detail-template
     template: '''
       <h1>{{title}}</h1>
       <h2>My Heroes</h2>
@@ -22,7 +19,6 @@ import 'hero_detail_component.dart';
       </ul>
       <my-hero-detail [hero]="selectedHero"></my-hero-detail>
     ''',
-// #enddocregion hero-detail-template
     styles: const [
       '''
       .selected {
@@ -73,11 +69,9 @@ import 'hero_detail_component.dart';
       }
     '''
     ],
-// #docregion directives
     directives: const [
       HeroDetailComponent
     ])
-// #enddocregion directives
 class AppComponent {
   final String title = 'Tour of Heroes';
   final List<Hero> heroes = mockHeroes;

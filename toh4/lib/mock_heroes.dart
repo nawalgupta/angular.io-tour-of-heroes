@@ -1,4 +1,3 @@
-// #docregion
 import 'hero.dart';
 
 final List<Hero> mockHeroes = [
@@ -13,4 +12,3 @@ final List<Hero> mockHeroes = [
 	new Hero(19, "Magma"),
 	new Hero(20, "Tornado")
 ];
-// #enddocregion
